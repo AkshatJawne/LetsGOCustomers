@@ -1,0 +1,1 @@
+A customer management system prototype built with GO, unique due to its dual configuration capabilities. The serverless configuration features AWS DynamoDB, AWS Lambda, and API Gateway. The server-based configuration features GraphQL and Mongo DB. 
