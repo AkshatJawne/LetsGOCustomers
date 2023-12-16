@@ -7,10 +7,9 @@ package graph
 import (
 	"context"
 	"fmt"
-	"github.com/AkshatJawne/LetsGOCustomers/graph/model"
-	"github.com/AkshatJawne/LetsGOCustomers/database"
+	"github.com/AkshatJawne/LetsGOCustomers/server-based/graph/model"
+	"github.com/AkshatJawne/LetsGOCustomers/server-based/database"
 )
-// TODO: Will need to update links above
 
 var db = database.Connect()
 
@@ -36,7 +35,7 @@ func (r *queryResolver) C ustomers(ctx context.Context) ([]*model.Customer, erro
  
 // Representative is the resolver for the representative field.
 func (r *queryResolver) Representative(ctx context.Context, id string) (*model.Customer, error) {
-	return db.GetCustomer(id), nil 
+	return db.GetCustomer(id), nil
 }
 
 // Mutation returns MutationResolver implementation.
